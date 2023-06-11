@@ -1,0 +1,219 @@
+/**************************/
+/* BELOW 1280px (smaller screens) */
+/**************************/
+@media (max-width: 80em) {
+  .header {
+    gap: 25%;
+  }
+
+  .nav {
+    font-size: 1.4rem;
+  }
+
+  .heading-primary {
+    font-size: 2.6rem;
+  }
+  .heading-secondary {
+    font-size: 2.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 1176px (Landscape tablets)*/
+/**************************/
+@media (max-width: 73.5em) {
+  html {
+    font-size: 56.25%;
+    /* 9/16 *100 = 56.25%  */
+  }
+
+  .main-logo {
+    height: 1.8rem;
+  }
+  .heading-primary {
+    font-size: 2.4rem;
+    line-height: 4.5rem;
+  }
+  .article-para {
+    font-size: 1.4rem;
+    line-height: 3rem;
+  }
+  .review {
+    height: 5rem;
+  }
+}
+/**************************/
+/* BELOW 986px (Tablets) */
+/**************************/
+@media (max-width: 61.6em) {
+  .header {
+    gap: 80%;
+  }
+  /* creating mobile nav */
+  .main-logo {
+    height: 1.6rem;
+  }
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+  .hidden {
+    display: block;
+  }
+  nav {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #ffffffef;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    /* hiding the navigation when the website is in initial state */
+    /* Hiding the element visually */
+    opacity: 0;
+    /* Making the navigation unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* Hiding the  nav from the screen readers*/
+    visibility: none;
+  }
+  .nav-open nav {
+    /* opening the navigation when the click event occurs */
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+  }
+  .nav {
+    font-size: 1.8rem;
+  }
+  .btn-mobile-nav {
+    display: block;
+  }
+  /* Creating the login-textbox */
+
+  .call-btn {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  main {
+    grid-template-columns: 100%;
+  }
+  .hero {
+    padding: 0;
+  }
+  .background {
+    display: none;
+  }
+  article {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+  }
+  .heading-primary,
+  .article-para {
+    padding: 0 8rem;
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+  .heading-primary {
+    font-weight: 700;
+    line-height: 3.5rem;
+    font-size: 2.4rem;
+  }
+  .colored {
+    color: #ba661c;
+  }
+  .heading-secondary {
+    margin-top: 2rem;
+    color: #150b03;
+    border-bottom: 1px solid #ba661c;
+    font-size: 1.8rem;
+    margin-left: 0;
+  }
+
+  .article-para {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+    line-height: 2;
+  }
+
+  footer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    height: 30vh;
+  }
+  .class1 {
+    display: none;
+  }
+}
+/**************************/
+/* BELOW 790px (smaller screen tablets and mobile phones) */
+/**************************/
+@media (max-width: 49.375em) {
+  .header {
+    padding: 0 2.5rem;
+  }
+
+  .heading-primary {
+    font-size: 2rem;
+  }
+  .heading-secondary {
+    font-size: 1.8rem;
+  }
+  .article-para {
+    font-size: 1.6rem;
+  }
+  @keyframes slider2 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/**************************/
+/* BELOW 550px (small screen mobiles) */
+/**************************/
+@media (max-width: 36em) {
+  .heading-primary {
+    font-size: 1.8rem;
+  }
+  .article-para {
+    font-size: 1.2rem;
+  }
+  .heading-secondary {
+    font-size: 1.6rem;
+  }
+  @keyframes slider2 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-120%);
+    }
+  }
+}
