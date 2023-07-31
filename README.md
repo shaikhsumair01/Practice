@@ -1,6 +1,6 @@
 # Practice
-A simple website design created by me. I took an inspiration from Omnifood project which I learned from Udemy and tried to create a design of my own with my own images and created a basic layout using some of the brand logos from google and used the omnifood logo since I didn't have a theme logo. Hope I don't get copywrite issues for using the logos.😅😂
-Jk. I know that won't happen since this is a non profitable project and I have just uploaded it to show my creativity to the viewers.
+This is a sample project made just to show my creativity to the viewers.
+I took the inspiration from Omnifood project which I learned from a Udemy course and created my own design (a basic landing page for Omnifood) using some logos and images from the internet.
 Hope you like it.
 Peace!
 
